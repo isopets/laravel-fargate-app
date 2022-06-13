@@ -4,7 +4,7 @@
 # Docker Compose
 .env
 
-#JavaScriptやCSSをトランスパイルしますが、それによって生成されるファイルはGit管理不要
+#
 /node_modules
 /public/css # この行を追加
 /public/hot
