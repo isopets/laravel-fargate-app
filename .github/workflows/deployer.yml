@@ -27,3 +27,5 @@ jobs:
         # if: github.ref == 'refs/heads/main'
         run: echo "ENV_NAME=prod" >> $GITHUB_ENV
       - uses: actions/checkout@v2
+      - run: docker-compose up -d --build app web
+      - run: docker-compose exec -T app composer install -n --prefer-dist --no-dev
